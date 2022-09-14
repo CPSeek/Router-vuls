@@ -3,7 +3,7 @@
 
 ### * Version
 
-V15.03.05.19_multi ac18_kf_V15.03.05.19(6318_)_cn.bin)
+V15.03.05.19_multi (ac18_kf_V15.03.05.19(6318_)_cn.bin)
 
 ### * Firmware
 [https://www.tenda.com.cn/download/detail-2683.html](https://www.tenda.com.cn/download/detail-2683.html)
