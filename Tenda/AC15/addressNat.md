@@ -12,7 +12,7 @@ V15.03.05.19 (US_AC15V1.0BR_V15.03.05.19_multi_TD01.bin)
 
 ### * Vulnerability Detail
 
-n function fromAddressNat, the content obtained by the program from the parameter "entrys", "mitInterface" and  "page" are passed to local_14, local_18 and local_1c, 
+In function fromAddressNat, the content obtained by the program from the parameter "entrys", "mitInterface" and  "page" are passed to local_14, local_18 and local_1c, 
 and then the local_14 and  local_18 are directly copied into the acStack796 stack through the sprintf function. The local_1c os copied into the acStack284 stack through the sprintf function.
 There is no size check, so there is a stack overflow vulnerability. The attacker can easily perform a Deny of Service Attack or Remote Code Execution with carefully crafted overflow data.
 
