@@ -1,5 +1,5 @@
 
-## Tenda AC18 Unauthorized stack overflow vulnerability
+## Tenda AC18 stack overflow vulnerability
 
 ### 1. Affected version:
 
