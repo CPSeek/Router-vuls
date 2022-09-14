@@ -12,7 +12,7 @@ V15.03.05.19 (US_AC15V1.0BR_V15.03.05.19_multi_TD01.bin)
 
 ### * Vulnerability Detail
 
-In function formExpandDlnaFile, the content obtained by the program from the parameter "deviceId" is passed to local_28, 
+In function saveParentControlInfo, the content obtained by the program from the parameter "deviceId" is passed to local_28, 
 and then the local_28 is directly copied into the local_50 heap through the strcpy function.
 There is no size check, so there is a heap overflow vulnerability. The attacker can easily perform a Deny of Service Attack or Remote Code Execution with carefully crafted overflow data.
 
