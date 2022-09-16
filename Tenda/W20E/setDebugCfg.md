@@ -38,7 +38,7 @@ void formSetDebugCfg(webs_t wp,char_t *pPath,char_t *pQuery)
   outputToWebs(wp,cmd);
   return;
 }
-
+```
 
 ### * POC
 
@@ -69,5 +69,3 @@ attack()
 
 ```
 
-
-```
