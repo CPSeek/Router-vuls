@@ -12,7 +12,7 @@ V15.11.0.6 (US_W20EV4.0br_V15.11.0.6(1068_1546_841)_CN_TDC)
 
 ### * Vulnerability Detail
 
-In function fromAddressNat, the content obtained by the program from the parameter "portMappingServer", "portMappingProtocol", "portMappingWan", "porMappingtInternal"
+In function formSetPortMapping, the content obtained by the program from the parameter "portMappingServer", "portMappingProtocol", "portMappingWan", "porMappingtInternal"
 and  "portMappingExternal" are passed to pcVar1, pcVar3, pcVar4, pcVar5, and pcVar6, 
 and then the pcVar1, pcVar3, pcVar4, pcVar5, and pcVar6 are directly copied into the sMibValue stack through the sprintf function.
 There is no size check, so there is a stack overflow vulnerability. The attacker can easily perform a Deny of Service Attack or Remote Code Execution with carefully crafted overflow data.
